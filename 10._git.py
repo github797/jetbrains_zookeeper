@@ -129,9 +129,3 @@ while True:
         exit()          # or break
     else:
         print(animals[int(user_input)])
-
-user_input = input('Please enter the number of the habitat you would like to view (для выхода "exit"): ')
-while user_input != 'exit':
-    print(animals[int(user_input)])
-    user_input = input('Please enter the number of the habitat you would like to view')
-print('See you later!')

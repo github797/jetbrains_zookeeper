@@ -141,13 +141,3 @@ while True:
     except ValueError as v:  # если ввели не цифры и не 'exit'
         print('Invalid input.')
         print('ValueError:', v)
-
-    except EOFError as e:  # если нажать CTRL+D
-        print('Hello user, it is EOF exception, you have pressed Ctrl+D.')
-        print('EOFError:', e)
-        raise SystemExit()
-
-    except KeyboardInterrupt as k:  # если нажать CTRL+F2 или нажать на кнопку 'стоп' в Pycharm
-        print('Hello user, you have pressed CTRL+F2.')
-        print('!KeyboardInterrupt:', k)
-        raise SystemExit()
